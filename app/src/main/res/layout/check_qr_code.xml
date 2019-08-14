@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:text="Do you have a QR code on your energy bill?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/checkQR"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" android:gravity="center"/>
+    <TextView
+            android:text="If you have a QR code pressing the Yes button will open your camera to scan. Ensure that you have enabled the Camera permission in the app settings."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/status"/>
+    <Button
+            android:text="@string/yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/yesQR"/>
+    <Button
+            android:text="@string/negative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/noQR"/>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:text="Calculate the carbon footprint of your home electricity usage. "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+    <TextView
+            android:text="Are you in the UK?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/checkUK"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" android:gravity="center"/>
+    <Button
+            android:text="@string/yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/yesUK"/>
+    <Button
+            android:text="@string/negative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/notUK"/>
+</LinearLayout>

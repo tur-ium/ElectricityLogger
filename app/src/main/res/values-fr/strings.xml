@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Enregistreur Électricté UK</string>
+    <string name="negative">Non</string>
+    <string name="next">Prochaine</string>
+    <string name="yes">Oui</string>
+</resources>

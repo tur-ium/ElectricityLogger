@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:text="Please enter the estimated annual electricity usage on your latest utility bill and your electricity supplier below"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" android:gravity="center"/>
+    <TextView
+            android:text="Country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/countryPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <MultiAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/countryEditText" android:hint="e.g. UK or Norway"/>
+    <TextView
+            android:text="Usage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/manualElecUsageInput" android:visibility="visible"
+            android:hint="in kWh per year"/>
+    <TextView
+            android:text="kWh / year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/ElecUsageUnits"/>
+    <TextView
+            android:text="Supplier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textShortMessage"
+            android:ems="10"
+            android:id="@+id/supplierEditText" android:visibility="visible"
+            android:hint="e.g. SSE or Ecotricity"/>
+    <Button
+            android:text="@string/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/enteredElecUsageButton"/>
+</LinearLayout>

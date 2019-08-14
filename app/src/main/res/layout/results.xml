@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/status"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    <TextView
+            android:text="Supplier unknown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/supplierName" android:visibility="invisible"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/CarbonIntensity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    <TextView
+            android:text="Carbon Intensity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/carbonIntensityComment"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:visibility="invisible"/>
+    <TextView
+            android:text="Estimated electricity will appear here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/electricity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" android:visibility="invisible"/>
+    <TextView
+            android:text="?? g CO2e / year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/carbonFootprint"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" android:visibility="invisible"/>
+</LinearLayout>
